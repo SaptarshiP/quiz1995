@@ -1,0 +1,22 @@
+{% load static %}
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'login.css' %}">
+</head>
+<body>
+    <h1>LOGIN</h1>
+
+
+<!--        <label>Roll Number:</label>-->
+<!--        <input type="text" id="roll_number" name="roll_number">-->
+    <div class="form_div">
+        <form action="/login/" method="post" class="form">
+            {% csrf_token %}
+             {{form.as_p}}
+            <input type="submit" class="button">
+            {{data}}
+        </form>
+        <a href="https://quiz1995.herokuapp.com/registration/" class="registration">Register</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,17 @@
+{% load static %}
+<html>
+<head>
+<!--    <script src="registration.js"></script>-->
+    <link rel="stylesheet" type="text/css" href="{% static 'registration.css' %}">
+</head>
+<body>
+    <h1>Registration</h1>
+    <div class="form_div">
+        <form action="/registration/" method="post" class="form">
+            {% csrf_token %}
+            {{form.as_p}}
+            <button type="submit" class="submit_button">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
