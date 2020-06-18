@@ -7,10 +7,11 @@
     <script src="{%static 'question_page.js' %}"></script>
 </head>
 <body onload="retrieve_data_from_backend()">
-    <p>Current Result:</p>
-    <div id="current_result"></div>
+    
 <!--    <button type="button" onclick="retrieve_data_from_backend()">Submit</button>-->
     <div id="question_answer_part">
+        <p>Current Result:</p>
+        <div id="current_result"></div>
         <div id="question_got"></div>
         <button type="button" onclick="check_result('A')" id="A"></button><br>
         <button type="button" onclick="check_result('B')" id="B"></button><br>
